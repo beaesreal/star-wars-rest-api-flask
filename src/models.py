@@ -33,7 +33,7 @@ class People(db.Model):
             "mass": self.mass,
             }
 
-class Planet(db.Model):
+class Planets(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(120), unique=True, nullable=False)
     diameter = db.Column(db.Integer, unique=False, nullable=False)
